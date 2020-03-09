@@ -1,5 +1,4 @@
-![ee01fd563a6506d6ecdc6d1c9ada02ce.mp4.zip](https://github.com/n-domi/cooing/files/4306011/ee01fd563a6506d6ecdc6d1c9ada02ce.mp4.zip)
-
+![ee01fd563a6506d6ecdc6d1c9ada02ce (1)](https://user-images.githubusercontent.com/59164751/76204862-83fa4c00-623c-11ea-8a81-7e3802770256.gif)
 
 Link→  https://cooing.herokuapp.com/
 

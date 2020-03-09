@@ -1,55 +1,16 @@
 class ContactsController < ApplicationController
   def new
     @contact = Contact.new
-    render :action => 'new'
   end
-
-  def create
-    # @contact = Contact.new(
-    #   name: params[:name],
-    #   ruby: params[:ruby],
-    #   email: params[:email],
-    #   item: params[:item],
-    #   content: params[:content]
-    # )
-    # if @contact.save
-    #   redirect_to root_path
-    # else
-    #   # render :new
-    #   render :confirm
-    # end   
-  end
-
-  def edit
-  end
-  
-  def update
-  end  
 
   def confirm
-    @contact = Contact.new(
-      name: params[:name],
-      ruby: params[:ruby],
-      email: params[:email],
-      item: params[:item],
-      content: params[:content]
-    )  
-    if @contact.save
-      redirect_to root_path
-    else
-      # render :new
-      render :new
-    end   
-  end  
+    session[:name] = contact_params[:name]
+    session[:ruby] = contact_params[:ruby]
+    session[:email] = contact_params[:email]
+    session[:item] = contact_params[:item]
+    session[:content] = contact_params[:content]
 
-  def check
-    @contact = Contact.new(
-      name: params[:name],
-      ruby: params[:ruby],
-      email: params[:email],
-      item: params[:item],
-      content: params[:content]
-    )
+    @contact = Contact.new(contact_params) 
 
     if @contact.valid?
       # OK。確認画面を表示
@@ -58,17 +19,43 @@ class ContactsController < ApplicationController
       # NG。入力画面を再表示
       render :new
     end
+  end
+
+  def create
+    @contact = Contact.new(
+      name: session[:name], 
+      ruby: session[:ruby], 
+      email: session[:email],
+      item: session[:item], 
+      content: session[:content]
+    )
+    if @contact.save
+      redirect_to root_path
+    else
+      render "/contacts/new"
+    end
+  end
+
+  def edit
+    @contact = Contact.new(
+      name: session[:name], 
+      ruby: session[:ruby], 
+      email: session[:email],
+      item: session[:item], 
+      content: session[:content]
+    )
+
+    render :new
   end  
 
-  # private
+  def done
+
+  end
+
+  private
 
   def contact_params
-    params.require(:contact).permit(
-      name: params[:name],
-      ruby: params[:ruby],
-      email: params[:email],
-      item: params[:item],
-      content: params[:content]
-     )
+    params.permit(:name, :ruby, :email, :item, :content)
   end
+
 end

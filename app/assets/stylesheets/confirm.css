@@ -13,3 +13,17 @@
     margin: 0px 30px;
     padding: 7px;
 }
+
+.content-box {
+  height: 100px;
+  width: 50%;
+  border: dashed rgb(250, 209, 133);
+  padding: 4px;
+}
+
+.content-confim {
+  word-wrap: break-word;
+  line-height: 28px;
+  text-align: left;
+  padding: 0px 8px;
+}

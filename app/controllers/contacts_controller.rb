@@ -32,7 +32,7 @@ class ContactsController < ApplicationController
       content: session[:content]
     )
     if @contact.save
-      redirect_to root_path
+      redirect_to "/thanks!"
     else
       render :new
     end
@@ -51,7 +51,7 @@ class ContactsController < ApplicationController
     render :new
   end  
 
-  def done
+  def thanks
 
   end
 

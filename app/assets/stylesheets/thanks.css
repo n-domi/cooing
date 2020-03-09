@@ -1,0 +1,19 @@
+.thanks-wrapper {
+  
+}
+
+.button-thanks {
+  width: 50%;
+  margin: 8px;
+}
+
+.button-thanks-clearfix {
+  text-align: center;
+  bottom: 40px;
+  padding: 40px;
+}
+
+.contact-discription-thanks {
+  padding: 40px;
+  line-height: 1.5em;
+}

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/contact' => "contacts#new"
   get '/confirm' => "contacts#confirm"
   get '/edit' => "contacts#edit"
+  get '/thanks!' => "contacts#thanks"
 
   resources :contacts,only: [:new,:create,:edit,:update] do
     

@@ -1,0 +1,311 @@
+header {
+  width: 100vw;
+  height: 100px;
+  /* background-color: sandybrown; */
+  background-color: wheat;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+}
+
+.header-logo {
+  height: 100%;
+  width: 30vw;
+  /* background-color: wheat; */
+  /* background-color: sandybrown; */
+  background-color: wheat;
+  text-align:center;
+  border-bottom: solid rgb(250, 209, 133);
+}
+
+.campany-name {
+  height: 100px;
+  line-height: 100px; 
+  font-size: 30px;
+  font-family: 'Century Gothic';
+}
+
+b {
+  font-size: 40px;
+  left: 20px;
+  padding-left: 20px;
+}
+
+.nav {
+  height: 100px;
+  width: 70vw;
+  display: flex;
+  border-bottom: solid rgb(250, 209, 133);
+}
+
+.nav-menu-clearfix {
+  display: flex;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-menu {
+  width: 100%;
+  height: 100%;
+  /* box-shadow: 0px 0px 4px 4px sandybrown;
+  cursor: url(https://a.deviantart.net/avatars-big/k/i/kittymoon23.gif?11), auto; */
+}
+
+.menu {
+  /* padding-right: 20px; */
+  /* padding-left: 50px;
+  padding-right: 30px; */
+  padding-top: 40px;
+  font-family: arial black;
+  width: calc( 100% / 4);
+  text-align: center;
+}
+
+.menu-now {
+  padding-top: 40px;
+  font-family: arial black;
+  width: calc( 100% / 4);
+  text-align: center;
+  background-color: rgba(250, 209, 133, 0.62);
+}
+
+.menu:hover {
+  color: orange;
+  box-shadow: 0px 0px 20px 1px saddlebrown;
+}
+
+.service:active,.about:active,.contact:active{
+  color: orange;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.concept {
+  width: 100vw;
+  /* height: 768px; */
+  height: 100vh;
+  background-color: wheat;
+  /* padding-bottom: 50px; */
+  /* background-color: sandybrown; */
+  /* background: -moz-linear-gradient(top, wheat, sandybrown);
+  background: -webkit-linear-gradient(top, wheat, sandybrown);
+  background: linear-gradient(to bottom, wheat, sandybrown); */
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 100px;
+  margin-bottom: -100px;
+}
+.concept-innner {
+  /* height: 768px;
+  width: 1366px; */
+  height: 100vh;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  background-image: url("https://sibf.jp/promotion/images/wallpaper/A1366-768.jpg");
+  background-size: 100% auto;
+  /* margin-left: 40px; */
+  /* border-bottom: solid rgb(250, 209, 133); */
+  padding-bottom: 100px;
+  margin-bottom: -100px;
+}
+
+.concept-title {
+  padding-top: 300px;
+  font-size: 60px;
+  color: white;
+  z-index: 1;
+}
+
+.concept-text {
+  padding-top: 150px;
+  line-height: 50px;
+  font-size: 35px;
+  color: white;
+}
+
+.servise-contents {
+  height: 150px;
+  line-height: 150px;
+  font-size: 80px;
+  background-color: wheat;
+  /* background-color: wheat; */
+  /* background-color: sandybrown; */
+  text-align: center; 
+  padding-top: 20px;
+  font-family: 'Tahoma';
+}
+
+.servise {
+  /* border-top: solid rgb(250, 209, 133); */
+  width: 100vw;
+  /* height: 1200px; */
+  background-color: wheat;
+  /* background-color: sandybrown; */
+  /* background: -moz-linear-gradient(top, sandybrown, wheat);
+  background: -webkit-linear-gradient(top, sandybrown, wheat);
+  background: linear-gradient(to bottom, sandybrown, wheat); */
+  /* display: block; */
+  padding-top: 150px;
+  margin-top: -100px;
+}
+
+.service-inner {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+
+
+
+.contents-row-one,.contents-row-two,.contents-row-three {
+  height: calc(100vh - 100px);
+  width: 100%;
+  display: flex;
+}
+
+.content {
+  height: 100%;
+  width: calc(100% / 3);
+  background-color: wheat;
+  /* background-color: sandybrown; */
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.content img {
+  height: 300px;
+  width: 300px;
+  margin-top: 50px;
+}
+
+.store-address {
+  font-size: 30px;
+  height: 40px;
+}
+
+.initiatives {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  /* padding: 50px 0px; */
+  background-color: wheat;
+  /* background-color: wheat; */
+  /* background: -moz-linear-gradient(top, wheat, sandybrown);
+  background: -webkit-linear-gradient(top, wheat, sandybrown);
+  background: linear-gradient(to bottom, wheat, sandybrown); */
+  display: flex;
+  /* border-top: dotted #8b451340; */
+  border-top: solid rgb(250, 209, 133);
+}
+
+img {
+  height: 500px;
+  width: 500px;
+}
+.initiatives-text-box {
+  height: 100%;
+  width: calc(100vw - 500px);
+}
+
+.initiatives-text {
+  font-size: 30px;
+  line-height: 500px;
+  text-align: center;
+  font-family: monospace;
+  left: 0px;
+}
+
+footer {
+  width: 100vw;
+  height: 200px;
+  background-color: wheat;
+  /* background-color:hsl(39, 100%, 74%); */
+}
+.footer-menu-innner {
+  border-top: solid #8b451340;
+  height: 100px;
+  width: 100vw;
+}
+
+.footer-menu-clearfix {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  font-family: Courier;
+}
+
+.copy {
+  border-top: solid #8b451340;
+  height: 100px;
+  width: 100vw;
+  text-align: center;
+  background-color: wheat;
+  /* background-color: wheat; */
+  /* background-color: #ffc559; */
+  /* background: -moz-linear-gradient(top, sandybrown, wheat);
+  background: -webkit-linear-gradient(top, sandybrown, wheat);
+  background: linear-gradient(to bottom, sandybrown, wheat); */
+}
+
+.copy-text {
+  line-height: 100px;
+  color: saddlebrown;
+}
+
+
+.service-lists-js {
+  width: 100%;
+  margin-left: 0px;
+  font-family: 'Century Gothic';
+}
+
+.service-list-js {
+  display: none;
+  padding-top: 15px;
+  line-height: 30px;
+  height: 30px;
+  font-size: 16px;
+  font-family: 'Century Gothic';
+  width: 100%;
+}
+
+
+.about {
+  
+}
+
+.ballooners {
+  width: 500px;
+}
+
+.service-list-font {
+  /* font-family: fantasy; */
+  /* padding-top: 50px; */
+}
+
+.c {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  text-shadow: 5px 5px 2px white;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: saddlebrown;
+}
+
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+

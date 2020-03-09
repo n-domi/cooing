@@ -1,0 +1,15 @@
+.form-container-confirm {
+  background-color: #8b45138c;
+}
+
+.edit-btn,.submit-btn {
+    height: 40px;
+    width: 100%;
+    background-color: saddlebrown;
+    color: white;
+    border: 1px solid rgb(250, 209, 133);
+    border-radius: 4px;
+    font-size: 18px;
+    margin: 0px 30px;
+    padding: 7px;
+}

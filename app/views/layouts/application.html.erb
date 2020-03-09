@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <title>cooing</title>
+  <script src="https://js.pay.jp/" type="text/javascript"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://js.pay.jp/" type="text/javascript"></script>
+  <script src="https://www.google.com/recaptcha/api.js?hl=ja"></script>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+  <title>FreemarketSample67d</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+</head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <!-- <h1 class="campany-name">株式会社<b>クーイング</b></h1> -->
+        <h1 class=campany-name><a href="/">COOING Co.,Ltd</a></h1>
+      </div>
+      <div class=nav>
+        <div class=nav-menu>
+          <ul class=nav-menu-clearfix>
+            <% if current_page?(about_path) %>
+              <div class=menu-now>
+                <%= link_to 'ABOUT', "/about" %>
+              </div>
+            <% else %>  
+              <div class=menu>
+                <%= link_to 'ABOUT', "/about", class:"about"%>
+              </div>
+            <% end %>  
+            <div class=menu>
+              <a href="/#servise" class="service">SERVISE</a>
+              <div class=service-lists-js>
+                <div class="service-list-js">
+                  <a href="http://tomoru.area9.jp/" class=c>Tomoru</a><br><a href="http://tomoruya.area9.jp/" class=c>Tomoru屋</a><br><a href="http://tomozo.area9.jp/" class=c>とも蔵</a><br><a href="http://roku.area9.jp/" class=c>禄</a><br><a href="https://r.gnavi.co.jp/djbm5g290000/" class=c>うる寅</a><br><a href="https://sagagourmet.sagafan.jp/e910463.html" class=c>HARUcafe</a><br><a href="https://www.anbata-enbata.com/" class=c>あんバター∞えんバター</a><br><a href="https://www.celeb-kojo.com/" class=c>セレブ工場(浜町店)</a><br><a href="https://www.celeb-kojo.com/" class=c>セレブ工場(府内町店)</a>
+                </div>
+              </div>
+            </div>
+            <div class=menu>
+              <a>RECRUIT</a>
+              <p></p>
+            </div >
+            <% if current_page?(contact_path) %>
+              <div class=menu-now>
+                <%= link_to 'CONTACT', "/contact", class:"contact"%>
+              </div>
+            <% else %>  
+              <div class=menu>
+              <a href="/contact">CONTACT</a>
+            </div>
+            <% end %>  
+          </ul>
+        </div>
+      </div>
+    </header>
+    <%= yield %>
+  </body>
+</html>

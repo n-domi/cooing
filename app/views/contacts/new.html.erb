@@ -1,0 +1,51 @@
+<body>
+  <div class="contact-inner">
+    <%# <form action="#" method="post" name="form" class="form-wrapper"> %>
+    <%= form_tag(check_path, method: :get) do |f| %>
+        <h1 class="contact-title">お問い合わせ 内容入力</h1>
+        <p class="contact-discription">お問い合わせ内容をご入力の上、「確認画面へ」ボタンをクリックしてください。</p>
+        <div class="form-container">
+            <div class="form">
+              <div class="form-left">
+                <label class="label">お名前<span class="require">必須</span></label>
+              </div>  
+                <input name="name" id="name" placeholder="例）山田太郎" value="<%= @contact.name %>">
+            </div>
+            <div class="form">
+              <div class="form-left">
+                <label>ふりがな<span class="require">必須</span></label>
+              </div>  
+                <input name="ruby" id="ruby" placeholder="例）やまだたろう" value="<%= @contact.ruby %>">
+            </div>
+            <div class="form">
+              <div class="form-left">
+                <label>メールアドレス<span class="require">必須</span></label>
+               </div>
+                <input name="email" id="email" placeholder="例）guest@example.com" value="<%= @contact.email %>">
+            </div>
+            <div class="form">
+              <div class="form-left">
+                <label>お問い合わせ項目<span class="require">必須</span></label>
+              </div>  
+                <select name="item" id="item">
+                    <option value="" class="defo">お問い合わせ項目を選択してください</option>
+                    <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+                    <option value="ご意見・ご感想">ご意見・ご感想</option>
+                </select>
+            </div>
+            <div class="form">
+              <div class="form-left">
+                <label>お問い合わせ内容<span class="require">必須</span></label>
+              </div>  
+                <textarea placeholder="お問合せ内容を入力" rows="5" name="content" id="content"><%= @contact.content %></textarea>
+            </div>
+        </div>
+        <div class="button-clearfix">
+          <%# <a href="/confirm"> %>
+            <button type="submit" id="contact_send">確認画面へ</button>
+            <%# <button>確認画面へ</button> %>
+          <%# </a>   %>
+        </div>  
+    <% end %>
+  </div>
+</body>

@@ -76,7 +76,7 @@ $(function(){
     
     console.log(path);
 
-    if(path != "/contact"){
+    if(path != "/contact" && path != "/edit"){
       $('.contact-discription').html('　　　　　　　　　　　　　　　　　必須項目を入力してください。').css('color','red');
     }
   });  

@@ -12,6 +12,8 @@ class ContactsController < ApplicationController
 
     @contact = Contact.new(contact_params) 
 
+    @item = contact_params[:item]
+
     if @contact.valid?
       # OK。確認画面を表示
       render :action => 'confirm'
@@ -32,7 +34,7 @@ class ContactsController < ApplicationController
     if @contact.save
       redirect_to root_path
     else
-      render "/contacts/new"
+      render :new
     end
   end
 
@@ -45,6 +47,7 @@ class ContactsController < ApplicationController
       content: session[:content]
     )
 
+    @item = @contact.item
     render :new
   end  
 

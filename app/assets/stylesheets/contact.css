@@ -9,8 +9,6 @@
 }
 
 .form-wrapper {
-  /* background-color: rgb(250, 209, 133); */
-  /* padding-bottom: 50px; */
 }
 
 .contact-title {
@@ -34,7 +32,6 @@
 }
 
 .form {
-  
   margin: 20px;
   justify-content: space-between;
   display: flex;
@@ -54,7 +51,6 @@ select {
   width: 420px;
   height: 30px;
   margin-top: 10px;
-  
 }
 
 textarea {
